@@ -1,4 +1,4 @@
-// Colores
+// ----- Colores -----
 
 object rojo {
     method esFuerte() {
@@ -60,35 +60,84 @@ object cuero{
 // ----- Objetos -----
 
 object remera{
-  color = rojo
-  material = lino
-  peso = 800
+  method color(){
+    return rojo
+  }
+  method material(){
+    return lino
+  }
+  method peso(){
+    return 800
+  }
 }
 
 object pelota{
-  color = pardo
-  material = cuero
-  peso = 1300
+  method color(){
+    return pardo
+  }
+  method material(){
+    return cuero
+  }
+  method peso(){
+    return 1300
+  }
 }
 
 
 object biblioteca{
-  color = verde
-  material = madera
-  peso = 8000
+  method color(){
+    return verde
+  }
+  method material(){
+    return madera
+  }
+  method peso(){
+    return 8000
+  }
 }
 
-object muñeco{
-  color = celeste
-  material = vidrio
-  var peso
+// buena práctica: evitar las ñ
+object munieco{
+  var peso = 500 // siempre le pongo un valor de entrada. Si pongo una variable tiene que haber una instancia donde la pueda modificar
+  
+  method color(){
+    return celeste
+  }
+  
+  method material(){
+    return madera
+  }
+  
+  // getter de la variable peso
+  method peso(){
+    return peso
+  }
+
+  // setter de la variable peso
+  method cambiarPeso(unValor){
+    peso = unValor
+  }
 
 }
 
 object placa{
-  var color
-  material = cobre
-  var peso
+  var peso = 3000
+  var color = rojo
+  method material(){
+    return cobre
+  }
+  method peso(){
+    return peso
+  }
+  method color(){
+    return color
+  }
+  method cambiarPeso(unValor){
+    peso = unValor
+  }
+  method cambiarColor(unColor){
+    color = unColor
+  }
 }
 
 
