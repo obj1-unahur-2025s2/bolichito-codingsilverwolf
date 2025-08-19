@@ -4,6 +4,16 @@ object bolichito {
     var objetoEnElMostrador = remera
     var objetoEnLaVidriera = placa
 
+    // getters para las variables
+    method objetoEnElMostrador(){
+        return objetoEnElMostrador
+    }
+
+    method objetoEnLaVidriera(){
+        return objetoEnLaVidriera
+    }
+
+    // setters
     method cambiarObjetoEnElMostrador(unObjeto){
         objetoEnElMostrador = unObjeto
     }
