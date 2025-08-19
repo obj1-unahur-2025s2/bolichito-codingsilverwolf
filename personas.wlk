@@ -1,23 +1,23 @@
 object Rosa{
-    method leGusta(objeto) {
-        objeto.peso <= 2000
+    method leGusta(algo) {
+        return algo.peso() <= 2000 //return porque es un método de consulta
     }
 }
 
 object Estefanía {
-    method leGusta(objeto) {
-        objeto.color.esFuerte()
+    method leGusta(algo) {
+        return algo.color().esFuerte() // Encadeno mensajes
     }
 }
 
 object Luisa{
-    method leGusta(objeto){
-        objeto.material.esBrillante()
+    method leGusta(algo){
+       return algo.material().esBrillante()
     }
 }
 
 object Juan{
-    method leGusta(objeto){
-        not objeto.color.esFuerte() || (objeto.peso > 1200 and objeto.peso < 1800)
+    method leGusta(algo){
+       return (not algo.color().esFuerte()) or (algo.peso() >= 1200 and algo.peso() <= 1800) // se puede usar ! también como negación, || como ó
     }
 }
