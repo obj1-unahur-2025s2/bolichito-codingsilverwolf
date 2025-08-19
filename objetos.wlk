@@ -27,32 +27,32 @@ object pardo {
 //----- Materiales -----------
 
 object cobre{
-  esBrillante(){
+  method esBrillante(){
     return true
   }
 }
 
 object vidrio{
-  esBrillante(){
+  method esBrillante(){
     return true
   }
 }
 
 
 object lino{
-  esBrillante(){
+  method esBrillante(){
     return false
   }
 }
 
 object madera{
-  esBrillante(){
+  method esBrillante(){
     return false
   }
 }
 
 object cuero{
-  esBrillante(){
+  method esBrillante(){
     return false
   }
 }
