@@ -38,3 +38,5 @@ El método NO es un mensaje. El método dice "yo te digo qué vas a hacer si te 
 
     1. Indicación. Modifican el estado de mi objeto.
     2. Consulta. Devuelven un valor.
+
+## Una vez clonado el repo en la carpeta del mismo: code . para abrir VSC
