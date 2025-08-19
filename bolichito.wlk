@@ -19,7 +19,7 @@ object bolichito {
     }
 
     method estaEquilibrado() {
-        method objetoEnElMostrador.peso() > objetoEnLaVidriera
+        return objetoEnElMostrador.peso() > objetoEnLaVidriera
     }
 }
 
